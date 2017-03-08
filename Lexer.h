@@ -23,12 +23,12 @@ class Lexer{
   istream& stream;
 
  public:
-  Lexer(istream& input);
+  Lexer(istream& in);
 
   //destructor
   ~Lexer();
   
-  Token nextToken();
+  Token* nextToken();
   char nextChar();
 };
 

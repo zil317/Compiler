@@ -25,8 +25,9 @@ class Token{
  public:
 
   //constructor
-  Token(int ttype,string lexeme,int line, int pos);
   Token();
+  Token(int ttype,string lexeme,int line, int pos);
+  
   
   //public method
   int getttype();

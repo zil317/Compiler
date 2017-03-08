@@ -11,10 +11,10 @@
 #include "token.h"
 
 Token::Token(int tokentype, string stringobject, int linenum, int charpos){
-  tokentype = ttype;
-  stringobject = lexeme;
-  linenum = line;
-  charpos = pos;
+  ttype = tokentype;
+  lexeme = stringobject;
+  line = linenum;
+  pos = charpos;
 }
 
 Token::Token(){

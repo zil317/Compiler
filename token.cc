@@ -12,9 +12,9 @@
 
 Token::Token(int tokentype, string stringobject, int linenum, int charpos){
   ttype = tokentype;
-  lexeme = stringobject;
-  line = linenum;
-  pos = charpos;
+  llexeme = stringobject;
+  lline = linenum;
+  ppos = charpos;
 }
 
 Token::Token(){
@@ -23,18 +23,18 @@ Token::Token(){
 
 Token::~Token(){}
 
-int Token::getttype(){
+int Token::type(){
   return ttype;
 }
 
-string Token::getlexeme(){
-  return lexeme;
+string Token::lexeme(){
+  return llexeme;
 }
-int Token::getline(){
-  return line;
+int Token::line(){
+  return lline;
 }
-int Token::getpos(){
-  return pos;
+int Token::pos(){
+  return ppos;
 }
 
 

@@ -18,22 +18,22 @@ class Token{
  private:
   //private member variables
   int ttype;
-  string lexeme;
-  int line;
-  int pos;
+  string llexeme;
+  int lline;
+  int ppos;
   
  public:
 
   //constructor
   Token();
-  Token(int ttype,string lexeme,int line, int pos);
+  Token(int ttype,string llexeme,int lline, int ppos);
   
   
   //public method
-  int getttype();
-  string getlexeme();
-  int getline();
-  int getpos();
+  int type();
+  string lexeme();
+  int line();
+  int pos();
 
   //deconstructor
   ~Token();

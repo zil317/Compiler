@@ -1,5 +1,5 @@
 #include "token.h"
-#include "Lexer.h"
+#include "lexer.h"
 #include <iostream>
 #include <fstream>
 
@@ -11,8 +11,8 @@ void processFile(istream& in) {
   
   tok = lexer.nextToken();
   printf(" Type     Lexeme    Line #    Pos\n");
-  while (tok->getttype() != Token::ENDOFFILE) {
-    printf("%5d     %-10s %5d  %5d\n", tok->getttype(), tok->getlexeme().c_str(), tok->getline(), tok->getpos());
+  while (tok->type() != Token::ENDOFFILE) {
+    printf("%5d     %-10s %5d  %5d\n", tok->type(), tok->lexeme().c_str(), tok->line(), tok->pos());
     tok = lexer.nextToken();
   }
 }
